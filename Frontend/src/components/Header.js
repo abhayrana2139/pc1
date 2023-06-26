@@ -32,7 +32,7 @@ const Header = () => {
     <AppBar
       position="sticky"
       sx={{
-        background: " radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(233,148,231,1) 41%, rgba(203,151,199,1) 56%)",
+        background: " radial-gradient(circle, rgba(234,234,234,1) 0%, rgba(26,246,255,1) 36%, rgba(147,204,236,1) 56%, rgba(224,224,224,1) 73%, rgba(217,255,251,1) 84%)",
       }}
     >
       <Toolbar>
@@ -75,6 +75,7 @@ const Header = () => {
                 to="/blogs/add"
                 label="Add Complaints"
               />
+
             </Tabs>
           </Box> } 
         <DrawerComp />
@@ -90,6 +91,8 @@ const Header = () => {
                                 <Tab label="Helpline" to="/Helpline" component={Link} />
                                 <Tab label="SaftyTips" to="/Saftytips" component={Link} />
                                 <Tab label="AboutUs" to="/Aboutus" component={Link} />
+                                <Tab label="News_and_Notifications" to="/news" component={Link} />
+                                
                          
 
 
@@ -120,7 +123,7 @@ const Header = () => {
             <Tab
                 className={classes.font}
                 LinkComponent={Link}
-                to="/blogs"
+                to="/Complaints"
                 label="All Complaints"
               />  
 
@@ -157,15 +160,12 @@ const Header = () => {
               >
                 Login
               </Button>
-              <Button
-                LinkComponent={Link}
-                to="/auth"
-                variant="contained"
-                sx={{ margin: 1, borderRadius: 10 }}
-                color="warning"
-              >
-                Signup
-              </Button>
+          
+           <Button LinkComponent={Link} to="/DoDoComplaint" variant="contained" 
+           sx={{ margin: 1 }} color="primary">Add-Complaint</Button>
+
+              
+           
             </>
           )}
           {isLoggedIn && (

@@ -46,12 +46,12 @@ const Auth = () => {
       sendRequest()
         .then((data) => localStorage.setItem("userId", data.user._id))
         .then(() => dispath(authActions.login()))
-        .then(() => naviagte("/blogs"));
+        .then(() => naviagte("/complaints"));
     }
   };
   return (
-    <div className="">
-      <form className="w-auto" onSubmit={handleSubmit}>
+    <div className=" h-[350px] m-auto overflow-scroll" >
+      <form className="w-auto " onSubmit={handleSubmit}>
         <Box
           maxWidth={400}
           maxHeight={500}

@@ -7,7 +7,7 @@ const Blogs = () => {
   const [blogs, setBlogs] = useState();
   const sendRequest = async () => {
     const res = await axios
-      .get("http://localhost:5000/api/blog")
+      .get("http://localhost:5000/api/complaint")
       .catch((err) => console.log(err));
     const data = await res.data;
     return data;
@@ -17,12 +17,15 @@ const Blogs = () => {
   }, []);
   console.log(blogs);
   return (
-    <Grid>
+<div className="h-[350px] m-auto bg-red-60 overflow-scroll" >
+<Grid container spacing={{ xs: 4, md: 10 }} columns={{ xs: 6, sm: 4, md: 14 }}>      
       
-      <Grid xs={6} md={8}>
     {blogs &&
         blogs.map((blog, index) => (
-          <Grid item xs={2} sm={4} md={4} key={index}>         <Blog
+          
+              <Grid item xs={2} sm={2} md={4} key={index}>
+      
+      <Blog
             id={blog._id}
             isUser={localStorage.getItem("userId") === blog.user._id}
             title={blog.title}
@@ -32,13 +35,19 @@ const Blogs = () => {
             name = {blog.name}
             FaultyName={blog.FaultyName}
           />
-          </Grid>
+    
+    </Grid>
+            
+   
+        
         ))}
-  </Grid>
+  
 
       
         
     </Grid>
+    </div>
+
   );
 };
 

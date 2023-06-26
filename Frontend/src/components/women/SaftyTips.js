@@ -4,8 +4,7 @@ import React from 'react';
 
 function SaftyTips() {
   return (
- <div className='h-[500px] w-[80%]  text-black  m-auto bg-red-50 overflow-scroll'> <h1 className=' space-y-64 font-bold text-white  bg-black text-[30px] text-center '> Women Safety Tips</h1>  
- 
+ <div className='h-[300px] w-[80%]  text-black  m-auto bg-red-500 overflow-scroll'> <h1 className=' space-y-64 font-bold text-white  bg-black text-[30px] text-center '> Women Safety Tips</h1>  
  <li>Avoid walking alone at night. If you must walk alone, stick to well-lit and busy areas.</li> 
  <br></br>
  <li>Carry pepper spray or a personal alarm with you at all times.</li><br></br> <li>If someone is following you, try to get to a 
@@ -26,6 +25,7 @@ function SaftyTips() {
         place with lots of people around. </li>
         <br/> 
         </div>
+      
   );
 }
 

@@ -2,8 +2,8 @@ import React from 'react'
 
 const Aboutus = () => {
   return (
-    <div className='overflow-hidden h-auto'>
-    <div className='bg-red-50 w-[70%] m-auto h-[500px]'>
+    <div className='overflow-hiddenh-[300px]'>
+    <div className='bg-red-50 w-[70%] m-auto h-[300px]'>
       <div className='bg-yellow-30 h-200%  text-white bg-black w-100% text-center font-bold text-[30px]'>
         About us
       </div>

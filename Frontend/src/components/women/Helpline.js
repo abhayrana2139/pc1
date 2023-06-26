@@ -3,8 +3,8 @@ import React from 'react'
 
 const Helpline = () => {
   return (
-<div className='h-auto w-[80%]  text-black  m-auto bg-red-50 '>
-    <div className='bg-red-50 w-[100%] m-auto h-[500px] '>
+<div className='h-300px w-[80%] overflow-scroll  text-black  m-auto bg-red-50 '>
+    <div className='bg-red-50 w-[100%] m-auto h-[300px] '>
  <div className='bg-yellow-30 h-200%  w-[100%]   text-white bg-black text-center font-bold  text-[30px]'>
 Helpline Numbers
 </div>

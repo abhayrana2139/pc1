@@ -3,12 +3,10 @@ import React from 'react'
 
 const News = () => {
   return (
-    <div className='bg-black text-white  w-100% text-center font-semibold text-[30px]  h-[300px]  overflow-scrolljustify-center '>
-
+    <div className='bg-red-50 w-[70%] m-auto h-[300px] overflow-scroll '>
     <Box  display={"flex"}  flexDirection={"column"} alignItems={"center"} justifyContent={"center"} boxShadow={"20px 20px 20px 20px #ccc "} margin={'auto'} padding={3} marginBottom={6} marginTop={6}>
-    <div className='bg-red-50 w-[70%] m-auto h-[500px] '>
  <div className='bg-black text-white h-200% w-100% text-center font-bold text-[30px]'>
-        SAFETY TIPS FOR WOMEN
+      News-and-Notifications
       </div>
    
       <div className='pt-8 '>
@@ -31,7 +29,7 @@ const News = () => {
 
 </div>
 
-    </div>
+  
   </Box>
   </div>
   )

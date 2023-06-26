@@ -33,11 +33,12 @@ const Blog = ({ title, description, imageURL, userName, name , isUser, id, Fault
       .then(() => navigate("/blogs"));
   };
   return (
-    <div>
+    <div className="h-auto">
       {" "}
       <Card
         sx={{
-          width: "90%",
+          height : "50%",
+          width: "100%",
           margin: "auto",
           mt: 2,
           padding: 2,

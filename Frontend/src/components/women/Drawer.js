@@ -52,7 +52,7 @@ const DrawerComp = () => {
                 {(isLoggedIn) && <>     <Button variant="contained" label="logout" onClick={() => setOpenDrawer(!openDrawer)} onClick={() => dispath(authActions.logout())} LinkComponent={Link} to="/auth" variant="contained" sx={{ margin: 1 }} color="warning">Logout</Button><br></br>
                 </>}
 
-                {(!isLoggedIn) && <Button variant="contained"  onClick={() => setOpenDrawer(!openDrawer)} label="submitCompaint" LinkComponent={Link} to="/auth"  sx={{ margin: 1 }} color="primary">Complaint_Submit2</Button>}<br></br>
+                {(!isLoggedIn) && <Button variant="contained"  onClick={() => setOpenDrawer(!openDrawer)} label="submitCompaint" LinkComponent={Link} to="/DoDocomplaint"  sx={{ margin: 1 }} color="primary">Add Complaint</Button>}<br></br>
 
               </ListItemText>
             </ListItemIcon>
@@ -61,10 +61,10 @@ const DrawerComp = () => {
         </List>
       </Drawer>
       <IconButton
-        sx={{ color: "white", marginLeft: "auto" }}
+        sx={{ color: "black", marginLeft: "auto" }}
         onClick={() => setOpenDrawer(!openDrawer)}
       >
-        <MenuIcon color="white" />
+        <MenuIcon color="black" />
       </IconButton>
     </React.Fragment>
   );

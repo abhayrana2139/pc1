@@ -3,11 +3,13 @@ import mongoose from "mongoose";
 import blogRouter from "./routes/blog-routes.js";
 import router from "./routes/user-routes.js";
 import cors from "cors";
+import Complaintrouter from "./routes/Complaint.js";
 const app = express();
 app.use(cors());
 app.use(express.json());
 app.use("/api/user", router);
 app.use("/api/blog", blogRouter);
+app.use('/api/complaint', Complaintrouter);
 mongoose
   .connect(
     "mongodb+srv://Abhay:JGUA87LLpflf3R9y@cluster0.ttsx8qh.mongodb.net/?retryWrites=true&w=majority"

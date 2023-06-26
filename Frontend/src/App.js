@@ -1,5 +1,4 @@
 import Header from "./components/Header";
-import Blogs from "./components/Blogs";
 import UserBlogs from "./components/UserBlogs";
 import BlogDetail from "./components/BlogDetail";
 import AddBlog from "./components/AddBlog";
@@ -18,6 +17,9 @@ import SaftyTips from "./components/SaftyTips";
 import Helpline from "./components/women/Helpline";
 import Footer from "./components/women/Footer";
 import { useMediaQuery , useTheme  } from "@mui/material";
+import News from "./components/News";
+import DoDocomplaint from "./components/DoDocomplaint.js";
+import Complaints from "./components/Complaints.js";
 function App() {
   const dispath = useDispatch();
 
@@ -48,7 +50,7 @@ function App() {
         <Header />
       </header>
 
-      <main>
+      <main className="h-full px w-full">
         <Routes>
         <Route path="/" element={< Home />} />
 
@@ -57,11 +59,16 @@ function App() {
         <Route path="/Laws" element={<Laws />} />
         <Route path="/SaftyTips" element={<SaftyTips />} />
         <Route path="/helpline" element={< Helpline />} />
+        <Route path="/news" element={< News />} />
+        <Route path="/DoDocomplaint" element={<DoDocomplaint />} />
+
+
           {!isLoggedIn ? (
             <Route path="/auth" element={<Auth />} />
-          ) : (
+          
+            ) : (
             <>
-              <Route path="/blogs" element={<Blogs />} />
+              <Route path="/Complaints" element={<Complaints />} />
               <Route path="/blogs/add" element={<AddBlog />} />
               <Route path="/myBlogs" element={<UserBlogs />} />
               <Route path="/myBlogs/:id" element={<BlogDetail />} />{" "}

@@ -42,7 +42,7 @@ const AddBlog = () => {
     console.log(inputs);
     sendRequest()
       .then((data) => console.log(data))
-      .then(() => navigate("/blogs"));
+      .then(() => alert('Complain registered'))
   };
   return (
     <div className="h-auto w-auto m-1 flex justify-center">

@@ -18,7 +18,7 @@ Women Helpline
  
     
     <AppBar position="sticky"  >
-      <Toolbar AppBar position="sticky" sx={{text: "red", background: "radial-gradient(circle, rgba(234,234,234,1) 0%, rgba(14,217,225,1) 45%, rgba(224,224,224,1) 67%)" } }>
+      <Toolbar AppBar position="sticky" sx={{text: "red", background: "radial-gradient(circle, rgba(234,234,234,1) 0%, rgba(26,246,255,1) 36%, rgba(147,204,236,1) 56%, rgba(224,224,224,1) 73%, rgba(217,255,251,1) 84%)" } }>
       
         <Tabs fon className='flex space-x-7 text-white' value={value} onChange={(e,val)=>setvalue(val)}>
          <div className='flex space-x-11 justify-center font- text-white h-9  bg-red-40 m-auto w-screen m'> 

@@ -4,7 +4,7 @@ const Laws = () => {
   
   return (
 
-<div className='h-auto w-[80%]  text-black  m-auto bg-red-50 overflow-scroll'  >
+<div className='h-[300px] w-[80%]  text-black  m-auto bg-red-50 overflow-scroll'  >
   <div className='bg-black text-white  w-100% text-center font-semibold text-[30px]   justify-center '>
 LAWS AND ACTS
 </div>
