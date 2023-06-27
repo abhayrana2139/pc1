@@ -50,7 +50,7 @@ function App() {
         <Header />
       </header>
 
-      <main className="h-full px w-full">
+      <main className="h-screen w-full">
         <Routes>
         <Route path="/" element={< Home />} />
 
